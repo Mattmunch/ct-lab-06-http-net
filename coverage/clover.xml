@@ -1,20 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1575933506247" clover="3.2.0">
-  <project timestamp="1575933506247" name="All files">
-    <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2" elements="10" coveredelements="10" complexity="0" loc="8" ncloc="8" packages="1" files="2" classes="2"/>
-    <file name="createResponse.js" path="/Users/matt/alchemy/career-track/ct-lab-06-http-net/lib/utils/createResponse.js">
-      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <line num="1" count="1" type="stmt"/>
-      <line num="2" count="1" type="stmt"/>
-    </file>
-    <file name="parseRequest.js" path="/Users/matt/alchemy/career-track/ct-lab-06-http-net/lib/utils/parseRequest.js">
-      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <line num="1" count="1" type="stmt"/>
-      <line num="2" count="2" type="stmt"/>
-      <line num="3" count="2" type="stmt"/>
-      <line num="4" count="2" type="stmt"/>
-      <line num="5" count="2" type="stmt"/>
-      <line num="6" count="2" type="stmt"/>
-    </file>
+<coverage generated="1575938063356" clover="3.2.0">
+  <project timestamp="1575938063356" name="All files">
+    <metrics statements="32" coveredstatements="19" conditionals="20" coveredconditionals="3" methods="4" coveredmethods="4" elements="56" coveredelements="26" complexity="0" loc="32" ncloc="32" packages="2" files="3" classes="3"/>
+    <package name="lib">
+      <metrics statements="24" coveredstatements="11" conditionals="20" coveredconditionals="3" methods="2" coveredmethods="2"/>
+      <file name="app.js" path="/Users/matt/alchemy/career-track/ct-lab-06-http-net/lib/app.js">
+        <metrics statements="24" coveredstatements="11" conditionals="20" coveredconditionals="3" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="cond" truecount="3" falsecount="1"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="25" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="28" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="31" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="lib.utils">
+      <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="createResponse.js" path="/Users/matt/alchemy/career-track/ct-lab-06-http-net/lib/utils/createResponse.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+      </file>
+      <file name="parseRequest.js" path="/Users/matt/alchemy/career-track/ct-lab-06-http-net/lib/utils/parseRequest.js">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="3" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+      </file>
+    </package>
   </project>
 </coverage>
