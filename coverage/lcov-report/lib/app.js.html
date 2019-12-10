@@ -20,31 +20,31 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">45.83% </span>
+        <span class="strong">75% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>11/24</span>
+        <span class='fraction'>15/20</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">15% </span>
+        <span class="strong">65% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>3/20</span>
+        <span class='fraction'>13/20</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">100% </span>
+        <span class="strong">66.67% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>2/2</span>
+        <span class='fraction'>2/3</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">45.83% </span>
+        <span class="strong">78.95% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>11/24</span>
+        <span class='fraction'>15/19</span>
       </div>
     </div>
     <p class="quiet">
       Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
     </p>
   </div>
-  <div class='status-line low'></div>
+  <div class='status-line medium'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -80,13 +80,7 @@
 <a name='L32'></a><a href='#L32'>32</a>
 <a name='L33'></a><a href='#L33'>33</a>
 <a name='L34'></a><a href='#L34'>34</a>
-<a name='L35'></a><a href='#L35'>35</a>
-<a name='L36'></a><a href='#L36'>36</a>
-<a name='L37'></a><a href='#L37'>37</a>
-<a name='L38'></a><a href='#L38'>38</a>
-<a name='L39'></a><a href='#L39'>39</a>
-<a name='L40'></a><a href='#L40'>40</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<a name='L35'></a><a href='#L35'>35</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -102,22 +96,18 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -127,36 +117,31 @@
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">const net = require('net');
 const parseRequest = require('./utils/parseRequest');
 const createResponse = require('./utils/createResponse');
-let currentColor = '';
-const colorHtml = `&lt;!DOCTYPE html&gt;
+const colorHtml = <span class="fstat-no" title="function not covered" >co</span>lor =&gt; <span class="cstat-no" title="statement not covered" >`&lt;!DOCTYPE html&gt;</span>
 &lt;html lang="en"&gt;
 &lt;head&gt;
     &lt;meta charset="UTF-8"&gt;
     &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
     &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
-    &lt;title&gt;Color&lt;/title&gt;
+    &lt;title&gt;${color}&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
-    &lt;h1&gt;${currentColor}&lt;/h1&gt;
+    &lt;h1 style="color: ${color} "&gt;${color}&lt;/h1&gt;
 &lt;/body&gt;
 &lt;/html&gt;`;
 const app = net.createServer(socket =&gt; {
   socket.on('data', data =&gt; {
     const request = parseRequest(data.toString());
-    <span class="missing-if-branch" title="else path not taken" >E</span>if(request.method === 'GET' &amp;&amp; request.path === '/') {
+    if(request.method === 'GET' &amp;&amp; request.path === '/') {
       socket.end(createResponse({ body: 'hi', status: '200 OK', contentType: 'text/plain' }));
-    } else <span class="cstat-no" title="statement not covered" >if(request.method === 'GET' &amp;&amp; request.path === '/red') {</span>
-<span class="cstat-no" title="statement not covered" >      currentColor = 'Red';</span>
-<span class="cstat-no" title="statement not covered" >      socket.end(createResponse({ body: colorHtml, status: '200 OK', contentType: 'text/html' }));</span>
-    } else <span class="cstat-no" title="statement not covered" >if(request.method === 'GET' &amp;&amp; request.path === '/green') {</span>
-<span class="cstat-no" title="statement not covered" >      currentColor = 'Red';</span>
-<span class="cstat-no" title="statement not covered" >      socket.end(createResponse({ body: colorHtml, status: '200 OK', contentType: 'text/html' }));</span>
-    } else <span class="cstat-no" title="statement not covered" >if(request.method === 'GET' &amp;&amp; request.path === '/blue') {</span>
-<span class="cstat-no" title="statement not covered" >      currentColor = 'Red';</span>
-<span class="cstat-no" title="statement not covered" >      socket.end(createResponse({ body: colorHtml, status: '200 OK', contentType: 'text/html' }));</span>
-    } else <span class="cstat-no" title="statement not covered" >if(request.method === 'POST' &amp;&amp; request.path === '/echo') {</span>
-<span class="cstat-no" title="statement not covered" >      currentColor = 'Red';</span>
-<span class="cstat-no" title="statement not covered" >      socket.end(createResponse({ body: colorHtml, status: '200 OK', contentType: 'text/html' }));</span>
+    } else <span class="missing-if-branch" title="if path not taken" >I</span>if(request.method === 'GET' &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >request.path === '/red')</span> {
+<span class="cstat-no" title="statement not covered" >      socket.end(createResponse({ body: colorHtml('Red'), status: '200 OK', contentType: 'text/html' }));</span>
+    } else <span class="missing-if-branch" title="if path not taken" >I</span>if(request.method === 'GET' &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >request.path === '/green')</span> {
+<span class="cstat-no" title="statement not covered" >      socket.end(createResponse({ body: colorHtml('Green'), status: '200 OK', contentType: 'text/html' }));</span>
+    } else <span class="missing-if-branch" title="if path not taken" >I</span>if(request.method === 'GET' &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >request.path === '/blue')</span> {
+<span class="cstat-no" title="statement not covered" >      socket.end(createResponse({ body: colorHtml('Blue'), status: '200 OK', contentType: 'text/html' }));</span>
+    } else <span class="missing-if-branch" title="else path not taken" >E</span>if(request.method === 'POST' &amp;&amp; request.path === '/echo') {
+      socket.end(createResponse({ body: request.body, status: '200 OK', contentType: 'text/plain' }));
       
     } else <span class="cstat-no" title="statement not covered" >socket.end(createResponse({ body: 'Not Found', status: '404 Not Found', contentType: 'text/plain' }));</span>
   });
@@ -169,7 +154,7 @@ module.exports = app;
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Dec 09 2019 16:34:23 GMT-0800 (Pacific Standard Time)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Dec 09 2019 16:44:44 GMT-0800 (Pacific Standard Time)
 </div>
 </div>
 <script src="../prettify.js"></script>

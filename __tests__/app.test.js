@@ -9,4 +9,13 @@ describe('createResponse', () => {
         expect(res.text).toEqual('hi');
       }); 
   });
+  it('posts status code 200 and plain text with the request body', () => {
+    return request(app)
+      .post('/echo')
+      .then(res => {
+        expect(res.text).toEqual('');
+      });
+      
+  });
+    
 });
